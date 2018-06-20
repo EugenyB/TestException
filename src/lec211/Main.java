@@ -10,5 +10,12 @@ public class Main {
         } finally {
             System.out.println("we were there");
         }
+
+        MyTest test = null;
+        try {
+            test.test();
+        } catch (MyException e) {
+            e.printMessage();
+        }
     }
 }
